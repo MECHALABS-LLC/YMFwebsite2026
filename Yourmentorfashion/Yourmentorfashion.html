@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Mentor Fashion | YMF</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #f5f5f5;
+      color: #333;
+    }
+
+    header {
+      background: #111;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin-bottom: 5px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .carousel {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .carousel-track {
+      display: flex;
+      transition: transform 0.4s ease;
+    }
+
+    .product {
+      min-width: 280px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: center;
+      margin-right: 20px;
+    }
+
+    .product img {
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 15px;
+    }
+
+    .price {
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .carousel-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: #111;
+      color: #fff;
+      border: none;
+      padding: 10px 14px;
+      cursor: pointer;
+      border-radius: 50%;
+      z-index: 5;
+    }
+    
+
+    .carousel-btn.left {
+      left: 10px;
+    }
+
+    .carousel-btn.right {
+      right: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      color: #fff;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Your Mentor Fashion | YMF</h1>
+    <p>Hoodies</p>
+    <nav>
+      <a href="#hoodies">Hoodies</a>
+      <a href="#Fit">Fit</a>
+      <!-- <a href="#hats">Hats</a> -->
+    </nav>
+  </header>
+
+  <div class="container">
+
+    <section id="hoodies">
+      <h2>Hoodies</h2>
+      <div class="carousel" data-index="0">
+        <button class="carousel-btn left">‹</button>
+        <div class="carousel-track">
+          <div class="product">
+            <img src="images/yellowblue.jpg" />
+            <h3>medium size</h3>
+            <p class="price">Ksh.3000</p>
+          </div>
+          <div class="product">
+            <img src="images/blackyellow.jpg" />
+            <h3>medium size</h3>
+            <p class="price">Ksh.4500</p>
+          </div>
+          <div class="product">
+            <img src="images/bluegreen.jpg" />
+            <h3>medium size</h3>
+            <p class="price">Ksh.3500</p>
+          </div>
+          <div class="product">
+            <img src="images/blackgreen.jpg" />
+            <h3>medium/large size</h3>
+            <p class="price">Ksh.3000</p>
+          </div>
+          <div class="product">
+            <img src="images/orange.jpg" />
+            <h3>L/XL size</h3>
+            <p class="price">Ksh.3000</p>
+          </div>
+          <div class="product">
+            <img src="images/mustard.jpg" />
+            <h3>medium size</h3>
+            <p class="price">Ksh.3500</p>
+          </div>
+        </div>
+        <button class="carousel-btn right">›</button>
+      </div>
+    </section>
+
+    <br />
+
+    <section id="Fit">
+      <h2>Wear it</h2>
+      <div class="carousel" data-index="0">
+        <button class="carousel-btn left">‹</button>
+        <div class="carousel-track">
+          <div class="product">
+            <img src="images/bymodels.jpg" />
+            <h3>black and yellow</h3>
+            <p class="price">unisex</p>
+          </div>
+          <div class="product">
+            <img src="images/malefit.jpg" />
+            <h3>bluegreen</h3>
+            <p class="price">unisex</p>
+          </div>
+          <div class="product">
+            <img src="images/orangemodels.jpg" />
+            <h3>orange_L/XL</h3>
+            <p class="price">unisex</p>
+          </div>
+        </div>
+        <button class="carousel-btn right">›</button>
+      </div>
+    </section>
+
+    <br />
+<!--
+    <section id="hats">
+      <h2>Hats</h2>
+      <div class="carousel" data-index="0">
+        <button class="carousel-btn left">‹</button>
+        <div class="carousel-track">
+          <div class="product">
+            <img src="https://via.placeholder.com/300x200?text=Snapback" />
+            <h3>Snapback</h3>
+            <p class="price">$20</p>
+          </div>
+          <div class="product">
+            <img src="https://via.placeholder.com/300x200?text=Beanie" />
+            <h3>Beanie</h3>
+            <p class="price">$18</p>
+          </div>
+          <div class="product">
+            <img src="https://via.placeholder.com/300x200?text=Dad+Hat" />
+            <h3>Dad Hat</h3>
+            <p class="price">$22</p>
+          </div>
+          <div class="product">
+            <img src="https://via.placeholder.com/300x200?text=Bucket+Hat" />
+            <h3>Bucket Hat</h3>
+            <p class="price">$24</p>
+          </div>
+          <div class="product">
+            <img src="https://via.placeholder.com/300x200?text=Trucker+Hat" />
+            <h3>Trucker Hat</h3>
+            <p class="price">$21</p>
+          </div>
+          <div class="product">
+            <img src="https://via.placeholder.com/300x200?text=Flat+Cap" />
+            <h3>Flat Cap</h3>
+            <p class="price">$26</p>
+          </div>
+        </div>
+        <button class="carousel-btn right">›</button>
+      </div>
+    </section>
+-->
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Yourmentorfashion. All rights reserved.</p>
+  </footer>
+
+<script>
+  document.querySelectorAll('.carousel').forEach(carousel => {
+    const track = carousel.querySelector('.carousel-track');
+    const items = track.children;
+    const itemWidth = items[0].offsetWidth + 20; // width + margin
+    let index = 0;
+
+    const visibleItems = Math.floor(carousel.offsetWidth / itemWidth);
+    const maxIndex = Math.max(0, items.length - visibleItems);
+
+    carousel.querySelector('.right').onclick = () => {
+      index = Math.min(index + 1, maxIndex);
+      track.style.transform = `translateX(-${index * itemWidth}px)`;
+    };
+
+    carousel.querySelector('.left').onclick = () => {
+      index = Math.max(index - 1, 0);
+      track.style.transform = `translateX(-${index * itemWidth}px)`;
+    };
+  });
+</script>
+</body>
+</html>
